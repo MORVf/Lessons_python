@@ -23,12 +23,12 @@ if a >= 0 and b >= 0 and c >= 0 and d >= 0:
     if a <= 10 and b <= 10 and c <= 10 and d <= 10:
         if a <= b and c <= d:
             for c in range(c, d + 1):
-                print('\t', c, end='')
+                print('\t', c, end='')            #пишем первую строку с заголовками
             print()
-            for a in range(a, b + 1):
-                print(a, end='')
+            for a in range(a, b + 1):             #заполняем строки по одной
+                print(a, end='')                  #пишем заголовок новой строки
                 for c in range(i, d + 1):
-                    print('\t', a * c, end='')
+                    print('\t', a * c, end='')    #вычисляем произведение чисел
                 print()
         else:
             print('Должны быть верны выражения a<=b, c<=d!')
