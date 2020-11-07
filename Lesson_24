@@ -20,12 +20,12 @@ Sample Output:
 count = 0
 matrix = [] #инициализируем пустой первичный список, куда будут записываться входные числа
 while count >= 0: #записываем все вводимые числа в двумерный список
-     sequence = [s for s in input().split()] #вводим построчно числа
-     if sequence == ['end']: #если в строке ввели 'end', то завершаем наполнять список числами
-         break
-     else: #иначе продолжаем наполнять
-         matrix += [sequence]
-         count += 1
+    sequence = [s for s in input().split()] #вводим построчно числа
+    if sequence == ['end']: #если в строке ввели 'end', то завершаем наполнять список числами
+        break
+    else: #иначе продолжаем наполнять
+        matrix += [sequence]
+        count += 1
 
 for i in range(len(matrix)): #переводим все строки в полученном списке к числам int 
     for j in range(len(matrix[0])):
