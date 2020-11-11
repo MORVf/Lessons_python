@@ -54,5 +54,5 @@ for size_field in range(size_field, 0, -1):#бежим внутрь матриц
 #выводим список в виде таблицы
 for g in range(save_size_field):
     for v in range(save_size_field):
-        print(field[k][l], end=' ')
+        print(field[g][v], end=' ')
     print('')
